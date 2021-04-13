@@ -1,0 +1,29 @@
+file_type: csv
+data_directory: /content/drive/MyDrive/Data Glacier/Datasets/
+dataset_name: test
+file_name: 2019-Nov
+inbound_delimiter: ","
+outbound_delimiter: "|"
+columns_names: ['event_time','event_type','product_id','category_id','category_code','brand','price','user_id', 'user_session']
+drop_columns: ['category_code', 'brand']
+data_type:
+  event_time: datetime64[ns]
+  event_type: object
+  product_id: int16
+  category_id: int16
+  category_code: object
+  brand: object
+  price: float32
+  user_id: int16
+  user_session: object
+columns: 
+    - event_time
+    - event_type
+    - product_id
+    - category_id
+    - category_code
+    - brand
+    - price
+    - user_id
+    - user_session
+clean_data: data_clean.csv
